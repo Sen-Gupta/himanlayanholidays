@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {5F22C900-477E-4A82-88A6-90B71F226AA2}
+database: master
+path: /sitecore/templates/Himalayan Holidays/HolidayDetails/__Standard Values
+parent: {6957BC60-6BE3-429C-A0E4-9C9EBFDAD321}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {6957BC60-6BE3-429C-A0E4-9C9EBFDAD321}
+templatekey: HolidayDetails
+created: 20180314T133422:636566312624830000
+
+----field----
+field: {9795E206-DC3C-4E50-BF91-D5459128AB71}
+name: Date
+key: date
+content-length: 16
+
+20180313T183000Z
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{6028B9F1-951E-4855-BBB7-E122E59C56A6}
+----version----
+language: en
+version: 1
+revision: 9ff5ee28-97a0-4480-94c9-76244df5de3f
+
+----field----
+field: {106D0C81-DA2D-476D-A9A0-EB0E659CB867}
+name: PricePerPerson
+key: priceperperson
+content-length: 5
+
+40000
+----field----
+field: {B8CC1134-6820-494F-A97F-5AEB0909CE65}
+name: Duration
+key: duration
+content-length: 8
+
+12 hours
+----field----
+field: {09817776-3B3B-416B-B178-6178C5937C9D}
+name: RecommendedBike
+key: recommendedbike
+content-length: 5
+
+Ninja
+----field----
+field: {C42E248E-D23D-4633-91F0-1E1A21684917}
+name: Include in Navigation
+key: include in navigation
+content-length: 1
+
+1
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180314T133422Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9ff5ee28-97a0-4480-94c9-76244df5de3f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180314T142545Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

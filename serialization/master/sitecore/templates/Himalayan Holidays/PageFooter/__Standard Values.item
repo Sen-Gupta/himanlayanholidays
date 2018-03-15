@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {AE324ADE-8FE5-49CF-A48A-568DF8F8BD31}
+database: master
+path: /sitecore/templates/Himalayan Holidays/PageFooter/__Standard Values
+parent: {1FF7B836-C0C7-4944-8E56-2E8280E2B19A}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {1FF7B836-C0C7-4944-8E56-2E8280E2B19A}
+templatekey: PageFooter
+created: 20180314T133536:636566313369770000
+
+----version----
+language: en
+version: 1
+revision: 5030cd77-07a9-4098-a821-831929194351
+
+----field----
+field: {C13D259C-B852-4AE7-B151-C1B52156C87D}
+name: Copyright
+key: copyright
+content-length: 48
+
+© 2017 Himalayan Holidays. All Rights Reserved. 
+----field----
+field: {B79B6987-2D2D-433C-BB74-26CC79740FFD}
+name: Logo
+key: logo
+content-length: 58
+
+<image mediaid="{E430009F-1B09-42E4-9579-04C6E24781B6}" />
+----field----
+field: {38AA32CE-B3EA-4996-A2B7-BF9B3CE65A48}
+name: Navigation Link
+key: navigation link
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180314T133536Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5030cd77-07a9-4098-a821-831929194351
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180314T143241Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

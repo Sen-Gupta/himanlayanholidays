@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {4BA55DD9-023F-4F67-A70F-9BCDCEEF35A5}
+database: master
+path: /sitecore/templates/Himalayan Holidays/Bike/__Standard Values
+parent: {6028B9F1-951E-4855-BBB7-E122E59C56A6}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {6028B9F1-951E-4855-BBB7-E122E59C56A6}
+templatekey: Bike
+created: 20180314T141437:636566336770000000
+
+----version----
+language: en
+version: 1
+revision: bdef983e-85ea-4d39-9aea-aceba4eecded
+
+----field----
+field: {16F7CE1F-26E3-4712-85D0-BBF66E7E25B9}
+name: Type
+key: type
+content-length: 7
+
+10 Gear
+----field----
+field: {77C6D8E2-583B-4DB3-AF77-DC30AA7B341F}
+name: Suitability
+key: suitability
+content-length: 6
+
+Racing
+----field----
+field: {E32103BF-4A19-423A-B606-9F6E47D10C47}
+name: Power
+key: power
+content-length: 6
+
+850 CC
+----field----
+field: {1358ECD2-819F-42C2-B47B-4DD8B7BFC00E}
+name: Availability
+key: availability
+content-length: 9
+
+Available
+----field----
+field: {FB55BB2B-DF1A-4460-ABFB-320CF6E95370}
+name: RentPerDay
+key: rentperday
+content-length: 4
+
+6000
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180314T141437Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bdef983e-85ea-4d39-9aea-aceba4eecded
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180314T141508Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
