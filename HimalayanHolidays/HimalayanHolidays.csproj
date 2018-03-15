@@ -357,6 +357,8 @@
     <Content Include="Views\Renderings\HimalayanHolidays\SocialMenu.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\Logo.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\Carousel.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\HappyCustomers.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -387,7 +389,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60329</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
