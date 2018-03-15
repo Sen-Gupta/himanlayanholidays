@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {259210A3-A3B3-47C5-A35E-33A32F41156D}
+database: master
+path: /sitecore/templates/sctrainings/Bike/__Standard Values
+parent: {ABD594B2-FAEE-417A-BE66-A80E7D3F5883}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {ABD594B2-FAEE-417A-BE66-A80E7D3F5883}
+templatekey: Bike
+created: 20180314T041401:636565976416870000
+
+----version----
+language: en
+version: 1
+revision: f6d8225d-1c54-40da-8493-0e1ef81920c6
+
+----field----
+field: {17A93CB4-0490-4813-8227-A9DED2F13535}
+name: Type
+key: type
+content-length: 7
+
+10 Gear
+----field----
+field: {3C6CA053-2663-4127-ACE0-E7C7BB6E2B25}
+name: Suitability
+key: suitability
+content-length: 6
+
+Racing
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180314T041401Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f6d8225d-1c54-40da-8493-0e1ef81920c6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180314T041416Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

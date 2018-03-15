@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {7DB4E619-CE80-4084-84BA-5CA9163AF35D}
+database: master
+path: /sitecore/content/Home/Goa Holidays/Beach and Band
+parent: {4E2F4595-4F66-4950-BFC2-E5117711311B}
+name: Beach and Band
+master: {00000000-0000-0000-0000-000000000000}
+template: {8E417664-F41C-4F47-89F4-5C7AA9CE23DE}
+templatekey: Holiday
+created: 20180314T040707:636565972275230000
+
+----version----
+language: en
+version: 1
+revision: b1440515-d968-40fc-ae45-3ea4b51265b9
+
+----field----
+field: {51210B43-4E1E-47BD-94E0-71716E9B199F}
+name: Main Heading
+key: main heading
+content-length: 14
+
+Beach and Band
+----field----
+field: {2E448AC0-0A66-4E00-9A2B-01309EE2F7F7}
+name: Main Description
+key: main description
+content-length: 38
+
+Please Describe Beach and Band here...
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180314T040707Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b1440515-d968-40fc-ae45-3ea4b51265b9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180314T040707Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
