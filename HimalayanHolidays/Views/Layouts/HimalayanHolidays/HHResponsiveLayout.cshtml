@@ -44,15 +44,7 @@
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-6 pull-right">
-                          <div class="social">
-                              <ul class="social-share">
-                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                              </ul>
-                          </div>
+                          @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/SocialMenu.cshtml")
                       </div>
                   </div>
                   <!--/.container-->
@@ -64,9 +56,7 @@
               <div class="container">
                   <div class="row">
                       <div class="col-md-4 col-sm-2 pull-left">
-                          <div class="navbar-header">
-                              <h1 class="navbar-brand img-responsive"> <a data-type='rd-navbar-brand' href="Home.html"><img src="images/HH/hhlogo.PNG" alt="logo" class="img-responsive"></a> </h1>
-                          </div>
+                         @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/Logo.cshtml")
                       </div>
                       <div class="col-md-8 col-sm-10 pull-right">
                           <nav class="navbar navbar-default navbar-inverse pull-right">

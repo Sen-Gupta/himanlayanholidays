@@ -354,6 +354,8 @@
     <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Page Types.item" />
     <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Page Types\Home.item" />
     <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Page Types\Text Page.item" />
+    <Content Include="Views\Renderings\HimalayanHolidays\SocialMenu.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\Logo.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\Carousel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
