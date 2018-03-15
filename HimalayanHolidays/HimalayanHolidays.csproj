@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -353,6 +354,7 @@
     <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Page Types.item" />
     <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Page Types\Home.item" />
     <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Page Types\Text Page.item" />
+    <Content Include="Views\Renderings\HimalayanHolidays\SocialMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -371,7 +373,6 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Renderings\HimalayanHolidays\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
