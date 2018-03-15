@@ -2,4 +2,8 @@
   <PropertyGroup>
     <Site Server="himalayanHolidays" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
+  <File Include="Views\Layouts\HimalayanHolidays\HHResponsiveLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/Layouts/HimalayanHolidays/HHResponsiveLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{6084C2FA-B0BA-4234-9561-0CE0147E0628}</Item>
+  </File>
 </Project>

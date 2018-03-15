@@ -72,6 +72,24 @@
     <Reference Include="RazorGenerator.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\packages\RazorGenerator.Mvc.2.4.2\lib\net40\RazorGenerator.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Abstractions, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Abstractions.8.2.170614\lib\NET452\Sitecore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.8.2.170614\lib\NET452\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Core, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.Core.8.2.170614\lib\NET452\Sitecore.Analytics.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.DataAccess, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.DataAccess.8.2.170614\lib\NET452\Sitecore.Analytics.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Model, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.Model.8.2.170614\lib\NET452\Sitecore.Analytics.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Processing, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.Processing.8.2.170614\lib\NET452\Sitecore.Analytics.Processing.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Kernel.8.2.170614\lib\NET452\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -81,11 +99,26 @@
     <Reference Include="Sitecore.Logging.Client, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Logging.Client.8.2.170614\lib\NET452\Sitecore.Logging.Client.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Marketing, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Marketing.8.2.170614\lib\NET452\Sitecore.Marketing.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Marketing.Core, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Marketing.Core.8.2.170614\lib\NET452\Sitecore.Marketing.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Marketing.Taxonomy, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Marketing.Taxonomy.8.2.170614\lib\NET452\Sitecore.Marketing.Taxonomy.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Mvc.8.2.170614\lib\NET452\Sitecore.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Mvc.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.Analytics.8.2.170614\lib\NET452\Sitecore.Mvc.Analytics.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.NVelocity, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.NVelocity.8.2.170614\lib\NET452\Sitecore.NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Xdb.Configuration, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Xdb.Configuration.8.2.170614\lib\NET452\Sitecore.Xdb.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Zip, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Zip.8.2.170614\lib\NET452\Sitecore.Zip.dll</HintPath>
@@ -136,9 +169,190 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about-us.html" />
+    <Content Include="Bike.html" />
+    <Content Include="BikeParallax.html" />
+    <Content Include="Contact-us.html" />
+    <Content Include="Contents\Fonts\fontawesome-webfont.svg" />
+    <Content Include="Contents\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Contents\Fonts\OFL.txt" />
+    <Content Include="Contents\Fonts\pacifico.svg" />
+    <Content Include="Contents\Images\bike.jpg" />
+    <Content Include="Contents\Images\brutale.jpg" />
+    <Content Include="Contents\Images\client1.png" />
+    <Content Include="Contents\Images\client2.png" />
+    <Content Include="Contents\Images\client3.png" />
+    <Content Include="Contents\Images\contact.png" />
+    <Content Include="Contents\Images\f1.jpg" />
+    <Content Include="Contents\Images\HH\1.PNG" />
+    <Content Include="Contents\Images\HH\2.PNG" />
+    <Content Include="Contents\Images\HH\3.PNG" />
+    <Content Include="Contents\Images\HH\banner.png" />
+    <Content Include="Contents\Images\HH\bike.jpg" />
+    <Content Include="Contents\Images\HH\footer-logo.png" />
+    <Content Include="Contents\Images\HH\footer-logoC.png" />
+    <Content Include="Contents\Images\HH\forest-biking.png" />
+    <Content Include="Contents\Images\HH\hhlogo.png" />
+    <Content Include="Contents\Images\HH\hhlogoC.png" />
+    <Content Include="Contents\Images\HH\hhlogonew.png" />
+    <Content Include="Contents\Images\HH\hhlogoold.PNG" />
+    <Content Include="Contents\Images\HH\main-image.jpg" />
+    <Content Include="Contents\Images\HH\map.PNG" />
+    <Content Include="Contents\Images\HH\search_icon.png" />
+    <Content Include="Contents\Images\image_bg.png" />
+    <Content Include="Contents\Images\magnifier.svg" />
+    <Content Include="Contents\Images\man1.jpg" />
+    <Content Include="Contents\Images\man2.jpg" />
+    <Content Include="Contents\Images\man3.jpg" />
+    <Content Include="Contents\Images\man4.jpg" />
+    <Content Include="Contents\Images\map.jpg" />
+    <Content Include="Contents\Images\palace-img2.jpg" />
+    <Content Include="Contents\Images\RE-H1.jpg" />
+    <Content Include="Contents\Images\RE-H2.jpg" />
+    <Content Include="Contents\Images\RE-H3.jpg" />
+    <Content Include="Contents\Images\RE-H4.jpg" />
+    <Content Include="Contents\Images\RE-H5.jpg" />
+    <Content Include="Contents\Images\ribon_one.png" />
+    <Content Include="Contents\Images\ribon_two.png" />
+    <Content Include="Contents\Images\royal-enfield1.jpg" />
+    <Content Include="Contents\Images\Royal-Enfield2.jpg" />
+    <Content Include="Contents\Images\Royal-Enfield3.jpg" />
+    <Content Include="Contents\Images\Royal-Enfield4.jpg" />
+    <Content Include="Contents\Images\Royal-Enfield5.jpg" />
+    <Content Include="Contents\Images\Royal-Enfield6.jpg" />
+    <Content Include="Contents\Images\Royal-Enfiled-green.jpg" />
+    <Content Include="Contents\Images\Royal-Enfiled-silver.jpg" />
+    <Content Include="Contents\Images\slider1.jpg" />
+    <Content Include="Contents\Images\slider2.jpg" />
+    <Content Include="Contents\Images\slider3.jpg" />
+    <Content Include="Contents\Images\slider4.jpg" />
+    <Content Include="Contents\Images\slider_one.jpg" />
+    <Content Include="Contents\Images\tab1.png" />
+    <Content Include="Contents\Images\tab2.png" />
+    <Content Include="Contents\Images\team-member.jpg" />
+    <Content Include="Contents\Images\testimonials1.png" />
+    <Content Include="Contents\Images\White-Royal-Enfield-Himalayan.jpg" />
+    <Content Include="Contents\Images\yamaha_r6_sports_bike-normal.jpg" />
+    <Content Include="Contents\Scripts\bootstrap.min.js" />
+    <Content Include="Contents\Scripts\custom.js" />
+    <Content Include="Contents\Scripts\html5shiv.js" />
+    <Content Include="Contents\Scripts\jquery.isotope.min.js" />
+    <Content Include="Contents\Scripts\jquery.js" />
+    <Content Include="Contents\Scripts\jquery.jscroll.js" />
+    <Content Include="Contents\Scripts\jquery.jscroll.min.js" />
+    <Content Include="Contents\Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Contents\Scripts\main.js" />
+    <Content Include="Contents\Scripts\Mobilemenu.js" />
+    <Content Include="Contents\Scripts\respond.min.js" />
+    <Content Include="Contents\Scripts\search.js" />
+    <Content Include="Contents\Scripts\validation.js" />
+    <Content Include="Contents\Scripts\wow.min.js" />
+    <Content Include="Contents\Styles\animate.min.css" />
+    <Content Include="Contents\Styles\bootstrap.min.css" />
+    <Content Include="Contents\Styles\font-awesome.css" />
+    <Content Include="Contents\Styles\font-awesome.min.css" />
+    <Content Include="Contents\Styles\main.css" />
+    <Content Include="Contents\Styles\mobilemenu.css" />
+    <Content Include="Contents\Styles\prettyPhoto.css" />
+    <Content Include="Contents\Styles\responsive.css" />
+    <Content Include="Contents\Styles\search.css" />
+    <Content Include="Contents\Styles\tour.css" />
+    <Content Include="Holiday-List.html" />
+    <Content Include="HolidayDetails.html" />
+    <Content Include="HolidayParallax.html" />
+    <Content Include="Home.html" />
     <Content Include="packages.config" />
     <Content Include="Views\Web.config" />
+    <Content Include="Contents\Fonts\fontawesome-webfont.eot" />
+    <Content Include="Contents\Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Contents\Fonts\fontawesome-webfont.woff" />
+    <Content Include="Contents\Fonts\FontAwesome.otf" />
+    <Content Include="Contents\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Contents\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Contents\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Contents\Fonts\pacifico.eot" />
+    <Content Include="Contents\Fonts\Pacifico.ttf" />
+    <Content Include="Contents\Fonts\pacifico.woff" />
+    <Content Include="Contents\Fonts\pacifico.woff2" />
+    <Content Include="Contents\Images\404.xcf" />
+    <Content Include="Contents\Images\slider.psd" />
+    <Content Include="App_Config\ConnectionStrings.config" />
+    <Content Include="App_Config\Sitecore.config" />
     <None Include="Properties\PublishProfiles\HH-Local.pubxml" />
+    <Content Include="Views\Layouts\HimalayanHolidays\HHResponsiveLayout.cshtml" />
+    <Content Include="serialization\master\sitecore\content.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Components.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Data Sources.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Data Sources\Himalayan Holidays.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Data Sources\Social Links.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Data Sources\Social Links\Facebook.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Data Sources\Social Links\Google Plus.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Data Sources\Social Links\Instagram.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Data Sources\Social Links\Skype.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Data Sources\Social Links\Twitter.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Home.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Home\About Us.item" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Home\Contact Us.item" />
+    <Content Include="serialization\master\sitecore\layout\Layouts.item" />
+    <Content Include="serialization\master\sitecore\layout\Layouts\Himalayan Holidays.item" />
+    <Content Include="serialization\master\sitecore\layout\Layouts\Himalayan Holidays\HHResponsiveLayout.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays\1.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays\2.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays\bike.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays\Brandings.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays\Brandings\hhlogo.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays\f1.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays\main-image.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays\map.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays\Royal-Enfield3.item" />
+    <Content Include="serialization\master\sitecore\media library\Himalayan Holidays\slider2.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays\1.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays\2.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays\bike.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays\f1.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays\footer-logo.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays\hhlogo.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays\main-image.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays\map.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays\Royal-Enfield3.item" />
+    <Content Include="serialization\master\sitecore\media library\Images\Himalayan Holidays\slider2.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__Image.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__Image\Image Details.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__Image\Image Details\Image Title.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__Image\Image Details\Image.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__Link.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__Link\Link Details.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__Link\Link Details\Icon Class.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__Link\Link Details\Link Separator.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__Link\Link Details\Link Title.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__Link\Link Details\Link Url.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__PageBase.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__PageBase\__Standard Values.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__SEO.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__SEO\Facebook.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__SEO\Facebook\Facebook FavIcon.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__SEO\SEO Details.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__SEO\SEO Details\Meta Description.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__SEO\SEO Details\Meta Tags.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__SEO\SEO Details\Page Title.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__SEO\__Standard Values.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__TitleText.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__TitleText\Title and Text Details.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__TitleText\Title and Text Details\Text.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__TitleText\Title and Text Details\Title.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Bases\__TitleText\__Standard Values.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Data Sources.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Data Sources\Logo.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Data Sources\Social Links.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Page Types.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Page Types\Home.item" />
+    <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Page Types\Text Page.item" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -155,13 +369,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Contents\Fonts\" />
-    <Folder Include="Contents\Images\" />
-    <Folder Include="Contents\Scripts\" />
-    <Folder Include="Contents\Styles\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Layouts\HimalayanHolidays\" />
     <Folder Include="Views\Renderings\HimalayanHolidays\" />
   </ItemGroup>
   <PropertyGroup>

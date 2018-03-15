@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {58252453-700C-4400-B6CB-8E1A4B75D95F}
+database: master
+path: /sitecore/content/Himalayan Holidays/Home
+parent: {6B368CFA-EDA9-4FAB-8AC9-0669E524B2A4}
+name: Home
+master: {00000000-0000-0000-0000-000000000000}
+template: {B3F3D43C-9974-4F40-A517-9394620D7261}
+templatekey: Home
+created: 20180315T074556Z
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{9C781D91-9EF5-4D35-99EC-36456571ED42}
+----version----
+language: en
+version: 1
+revision: c5010519-9d17-40dd-9e7f-d30301067f7e
+
+----field----
+field: {F2CBEDC2-9ABD-47C2-BDD3-4F6ECA903355}
+name: Title
+key: title
+content-length: 4
+
+Home
+----field----
+field: {5A90D015-CDE8-436A-872C-218B1D916A3D}
+name: Text
+key: text
+content-length: 26
+
+Please describe Home here!
+----field----
+field: {9B9AB523-B5FF-4315-B2A2-67F242F120AB}
+name: Page Title
+key: page title
+content-length: 4
+
+Home
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180315T074556Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c5010519-9d17-40dd-9e7f-d30301067f7e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180315T074611Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

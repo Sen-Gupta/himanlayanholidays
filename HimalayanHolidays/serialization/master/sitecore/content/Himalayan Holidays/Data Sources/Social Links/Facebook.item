@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {78839B98-65FC-43CE-9AF6-69D2733DCF71}
+database: master
+path: /sitecore/content/Himalayan Holidays/Data Sources/Social Links/Facebook
+parent: {7D1EA1BA-1345-458F-BF3F-8301AB3532C1}
+name: Facebook
+master: {00000000-0000-0000-0000-000000000000}
+template: {40926C3F-0C6E-4D71-8600-8FCE917A785A}
+templatekey: Social Links
+created: 20180315T072500Z
+
+----version----
+language: en
+version: 1
+revision: 1b0e6be0-6a5c-4dbb-bd81-8e7f0449f94e
+
+----field----
+field: {FF7D900A-EEAE-4334-9DCD-C44B5FBB5BDB}
+name: Icon Class
+key: icon class
+content-length: 14
+
+fa fa-facebook
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180315T072500Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1b0e6be0-6a5c-4dbb-bd81-8e7f0449f94e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180315T072655Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
