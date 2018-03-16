@@ -356,6 +356,17 @@
     <Content Include="serialization\master\sitecore\templates\Himalayan Holidays\Page Types\Text Page.item" />
     <Content Include="Views\Renderings\HimalayanHolidays\SocialMenu.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\Logo.cshtml" />
+    <Content Include="serialization\master\sitecore\content\Himalayan Holidays\Data Sources\Himalayan Holidays Logo.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\Carousel.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\FeaturedBike.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\HappyCustomers.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\Logo.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\NewsLetter.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\PageBody.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\PrimaryMenu.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\Search.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\SocialMenu.item" />
+    <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\Testimonials.item" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -374,6 +385,12 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.Extension\Sitecore.Extension.csproj">
+      <Project>{0f512f1b-2555-459c-80d0-09df4e1d50d7}</Project>
+      <Name>Sitecore.Extension</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

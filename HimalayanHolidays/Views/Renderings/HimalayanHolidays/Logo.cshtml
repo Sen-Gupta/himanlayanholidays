@@ -1,9 +1,52 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
+@using Sitecore.Data
+@using Sitecore.Data.Items
+@using Sitecore.Links
+@using Sitecore.Data.Fields
+@using Sitecore.Extension.Data.Fields
+
 @model RenderingModel
 @{
+    string theHomeUrl = string.Empty;
+    Item theLogoItem = null;
+    bool isDataSource = false;
+    string theLogoDataSource = Html.Sitecore().CurrentRendering.DataSource;
+    if (!String.IsNullOrEmpty(theLogoDataSource))
+    {
+
+        isDataSource = true;
+        theLogoItem = Sitecore.Context.Database.GetItem(theLogoDataSource);
+        if (String.IsNullOrEmpty(theLogoItem.Fields["Link Url"].Value))
+        {
+            Item theHomeItem = Sitecore.Context.Database.GetItem(Sitecore.Context.Site.StartPath);
+            theHomeUrl = LinkManager.GetItemUrl(theHomeItem);
+        }
+        else
+        {
+            LinkField theHomeLinkField = theLogoItem.Fields["Link Url"];
+
+            theHomeUrl = theHomeLinkField.LinkUrl();
+        }
+    }
+    else
+    {
+        isDataSource = false;
+    }
 
 }
-<div class="navbar-header">
-    <h1 class="navbar-brand img-responsive"> <a data-type='rd-navbar-brand' href="Home.html"><img src="images/HH/hhlogo.PNG" alt="logo" class="img-responsive"></a> </h1>
-</div>
+@if (isDataSource)
+{
+    <div class="navbar-header">
+        <h1 class="navbar-brand img-responsive">
+            <a href="@theHomeUrl" data-type="rd-navbar-brand">
+                @Html.Sitecore().Field("Image", theLogoItem, new { @class = "img-responsive" })
+            </a>
+        </h1>
+    </div>
+}
+else
+{
+    //Todo do a meaningful message later
+    <p>@Html.Sitecore().CurrentRendering.RenderingItem.DisplayName has no data source.</p>
+}

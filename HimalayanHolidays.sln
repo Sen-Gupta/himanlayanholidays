@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HimalayanHolidays", "Himala
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HimalayanHolidays.Tests", "HimalayanHolidays.Tests\HimalayanHolidays.Tests.csproj", "{49308913-6345-4F3F-920E-059935425520}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Extension", "Sitecore.Extension\Sitecore.Extension.csproj", "{0F512F1B-2555-459C-80D0-09DF4E1D50D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{49308913-6345-4F3F-920E-059935425520}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49308913-6345-4F3F-920E-059935425520}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49308913-6345-4F3F-920E-059935425520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F512F1B-2555-459C-80D0-09DF4E1D50D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F512F1B-2555-459C-80D0-09DF4E1D50D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F512F1B-2555-459C-80D0-09DF4E1D50D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F512F1B-2555-459C-80D0-09DF4E1D50D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
