@@ -1,15 +1,25 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
+@using Sitecore.Data.Items
+@using Sitecore.Data.Fields
+@using Sitecore.Extension.Data.Fields
+
 @model RenderingModel
 @{
+    Item theSocialMenu = Sitecore.Context.Database.GetItem("{7D1EA1BA-1345-458F-BF3F-8301AB3532C1}");
+    LinkField socialLink = null;
 
 }
 <div class="social">
     <ul class="social-share">
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+        @foreach (Item socialMenu in theSocialMenu.Children)
+        {
+            socialLink = socialMenu.Fields["Link Url"];
+            <li>
+                <a href="@socialLink.LinkUrl()">
+                    <i class="@socialMenu["Icon Class"]"></i>
+                </a>
+            </li>
+        }
     </ul>
 </div>
