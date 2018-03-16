@@ -359,6 +359,10 @@
     <Content Include="Views\Renderings\HimalayanHolidays\Logo.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\Carousel.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\FeaturedBike.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\HappyCustomers.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\Search.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\NewsLetter.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\Testimonials.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
