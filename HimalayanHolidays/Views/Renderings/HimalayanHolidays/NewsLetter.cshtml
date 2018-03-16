@@ -1,0 +1,34 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+
+<div class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+    <div class="thumbnail center text-left">
+        <h2>Newsletter :</h2>
+        <form action="" id="NewsletterVal">
+            <div id="thanksmsg">
+                <p>
+                    Sign up to get exclusive offers from our
+                    favorite brands and to be well up in the news.
+                </p>
+
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <input class="form-control" type="email" id="myEmail" name="email" placeholder="your@email.com" required>
+                </div>
+                <input type="submit" value="Subscribe" class="btn btn-large btn-primary" id="newsbtn" disabled />
+
+            </div>
+        </form>
+        <p id="thanksmsgcont">
+            <strong>Thanks! Please check your inbox to confirm your subscription. </strong>
+            <br /><br />
+            <b>If you haven’t previously confirmed a subscription to a Himalayan Holidays newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.</b>
+        </p>
+    </div>
+</div>

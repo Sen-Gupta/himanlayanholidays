@@ -1,0 +1,56 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+
+<div class="thumbnail center text-left">
+    <h2>Testimonials:</h2>
+    <form action="" method="post" id="testimonialVal">
+        <div id="thanksmsgtestimonial">
+            <p>We would love to hear from you! Please fill out this form and we will get in touch with you shortly.</p>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    Biker:
+                </span>
+                <input class="form-control" type="text" id="bikers" name="biker" placeholder="Enter your Name" required>
+            </div>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon">
+                    Email:
+                </span>
+                <input class="form-control" type="email" id="myEmail2" name="email" placeholder="abc@gmail.com" required>
+            </div>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon">
+                    Tour:
+                </span>
+                <select class="form-control" id="seloption" name="selectbox" required>
+                    <option> Select Tour </option>
+                    <option> Leh - Ladakh Tour </option>
+                    <option> Sikkim - Gangtok tour </option>
+                    <option> Darjeeling Tour </option>
+
+                </select>
+
+            </div>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon">
+                    Love:
+                </span>
+                <textarea class="text-cont" name="textareabox" id="messg" placeholder="Please enter your message"></textarea>
+            </div>
+            <input type="submit" value="Send Love" id="sendlove" class="btn btn-large btn-primary" disabled />
+            <input type="submit" value="Edit Love" class="btn btn-large btn-primary" id="editbtn" disabled />
+        </div>
+    </form>
+    <p id="thanksmsgcontect">
+        <strong>
+            Thanks for sending us love. Your testimonial will be published shortly.
+        </strong>
+    </p>
+</div>

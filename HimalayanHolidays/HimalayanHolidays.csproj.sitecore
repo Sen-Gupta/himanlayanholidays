@@ -6,4 +6,7 @@
   <File Include="/Views/Layouts/HimalayanHolidays/HHResponsiveLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{6084C2FA-B0BA-4234-9561-0CE0147E0628}</Item>
   </File>
+  <File Include="Views\Renderings\HimalayanHolidays\NewsLetter.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{521498C7-61E7-4712-AF9E-1A0443577A31}</Item>
+  </File>
 </Project>
