@@ -380,6 +380,7 @@
     <Content Include="Views\Renderings\HimalayanHolidays\FooterMenu.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\Copyright.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\CommentForm.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\LatestComment.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
