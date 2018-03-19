@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <Site Server="himalayanholidays" UserName="sitecore\admin" IsRemoteSitecore="False" />
+    <Site Server="himalayanHolidays" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
   <File Include="Views\Layouts\HimalayanHolidays\HHResponsiveLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
   <File Include="/Views/Layouts/HimalayanHolidays/HHResponsiveLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
