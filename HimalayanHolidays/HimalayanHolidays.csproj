@@ -389,6 +389,7 @@
     <Content Include="Views\Renderings\HimalayanHolidays\HolidayDetails.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\HolidayInformation.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\PrimaryMenu.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\RightSideDownNavigationHolidayList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
