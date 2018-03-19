@@ -212,7 +212,9 @@
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-sm-3 col-xs-12"> &copy; 2017 <a target="_blank" href="Home.html" title="Himalayan Holidays">Himalayan Holidays</a>. All Rights Reserved. </div>
+                <div class="col-md-5 col-sm-3 col-xs-12">
+                    @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/Copyright.cshtml")
+                </div>
                 <div class="col-md-5 col-sm-7 col-xs-12">
                     @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/FooterMenu.cshtml")
                 </div>

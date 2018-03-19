@@ -378,6 +378,7 @@
     <Content Include="Views\Renderings\HimalayanHolidays\Accordian.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\FeaturedHoliday.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\FooterMenu.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\Copyright.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
