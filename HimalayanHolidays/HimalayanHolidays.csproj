@@ -376,6 +376,7 @@
     <Content Include="serialization\master\sitecore\layout\Renderings\Himalayan Holidays\Testimonials.item" />
     <Content Include="Views\Renderings\HimalayanHolidays\Breadcrumb.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\Accordian.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\RightSideDownNavigationHolidayList.cshtml" />
     <Content Include="Views\Renderings\FeaturedHoliday.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
