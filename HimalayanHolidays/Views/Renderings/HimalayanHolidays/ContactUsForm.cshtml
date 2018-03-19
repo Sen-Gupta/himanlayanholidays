@@ -1,0 +1,57 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+<div class="thumbnail center text-left contactus-form">
+    <h2>Call Me Back:</h2>
+    <form id="contactValidation">
+        <p>Share your details and we will get back to you!</p>
+        <div class="thanksmscont">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    First Name:
+                </span>
+                <input class="form-control" type="text" id="firstname" name="firstname" placeholder="Enter Your First Name" required>
+            </div>
+            <br>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    Last Name:
+                </span>
+                <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name" required>
+            </div>
+            <br>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    Phone No.:
+                </span>
+                <input class="form-control" type="tel" id="phone" name="phoneNumber" pattern="/^[1-9]{1}[0-9]{9}$/" placeholder="Enter Your Phone No." required>
+            </div>
+            <br>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    Email:
+                </span>
+                <input class="form-control" type="text" id="email3" name="email" placeholder="abc@gmail.com" required>
+            </div>
+            <br>
+
+            <div class="input-group">
+                <span class="input-group-addon" required>
+                    Description:
+                </span>
+
+                <textarea cols="40" id="comments" class="text-cont" name="comments" placeholder="Additional comments or requirements" rows="6"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="btncontact" class="btn btn-large btn-primary">
+        </div>
+    </form>
+    <p id="thanksmsgcontect">
+        <strong>
+            Your Form has been successfully submitted!.
+        </strong>
+    </p>
+
+</div>
