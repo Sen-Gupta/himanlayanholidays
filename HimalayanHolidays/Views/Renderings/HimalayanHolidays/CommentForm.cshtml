@@ -1,0 +1,46 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+<div class="indentedSection news-testimonial">
+
+    <!--
+    contact form created for treehouse competition.
+    -->
+
+    <div class="thumbnail center text-left">
+        <h2>Comment:</h2>
+        <form action="" method="post" id="commentform">
+            <div id="thanksmsgcommentform">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        Author:
+                    </span>
+                    <input class="form-control" type="text" id="authorname" name="authorname" placeholder="Enter your Name" required>
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        Author Url:
+                    </span>
+                    <input class="form-control" type="text" id="myEmail3" name="email" placeholder="abc@gmail.com" required>
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        Comment:
+                    </span>
+                    <textarea class="text-cont" name="textareabox" id="commentarea" placeholder="Please enter your message"></textarea>
+                </div>
+                <input type="submit" id="postcomt" value="Post comment" class="btn btn-large btn-primary">
+            </div>
+        </form>
+        <p id="thanksmsgcontect">
+            <strong>
+                Thanks for sending us love. Your testimonial will be published shortly.
+            </strong>
+        </p>
+    </div>
+</div>

@@ -379,9 +379,12 @@
     <Content Include="Views\Renderings\HimalayanHolidays\FeaturedHoliday.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\FooterMenu.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\Copyright.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\CommentForm.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\LatestComment.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\BikeDetails.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\Map.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\ContactUsForm.cshtml" />
-    <Content Include="Views\Address.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\Address.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\HolidayBikes.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\HolidayDetails.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\HolidayInformation.cshtml" />
