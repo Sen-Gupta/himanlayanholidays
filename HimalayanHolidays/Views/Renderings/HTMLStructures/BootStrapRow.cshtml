@@ -1,9 +1,10 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
+@using DynamicPlaceholders.Mvc.Extensions
 @model RenderingModel
 @{
 
 }
 <div class="row" style="min-height:30px">
-    @Html.Sitecore().Placeholder("bootstrapRow")
+    @Html.Sitecore().DynamicPlaceholder("bootstrapRow")
 </div>

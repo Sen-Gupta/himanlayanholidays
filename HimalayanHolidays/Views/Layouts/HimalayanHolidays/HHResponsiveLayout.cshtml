@@ -1,6 +1,8 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Analytics.Extensions
 @using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc.Helpers
+@using DynamicPlaceholders.Mvc.Extensions
 @model RenderingModel
 @{
     Layout = null;
@@ -67,11 +69,11 @@
             </div>
         </div>
     </header>
-  
-  
-    @Html.Sitecore().Placeholder("maincontainer")
-   
-    
+
+
+    @*@Html.Sitecore().Placeholder("maincontainer")*@
+
+    @Html.Sitecore().DynamicPlaceholder("maincontainer")
 
 
     <footer id="footer" class="midnight-blue">

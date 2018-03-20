@@ -1,15 +1,16 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
+@using DynamicPlaceholders.Mvc.Extensions
 @model RenderingModel
 @{
 
 }
 <div class="col-sm-12 col-md-3 col-xs-12">
-    @Html.Sitecore().Placeholder("leftColumn")
+    @Html.Sitecore().DynamicPlaceholder("leftColumn")
 </div>
 <div class="col-sm-12 col-md-6 col-xs-12">
-    @Html.Sitecore().Placeholder("contentColumn")
+    @Html.Sitecore().DynamicPlaceholder("contentColumn")
 </div>
 <div class="col-sm-12 col-md-3 col-xs-12">
-    @Html.Sitecore().Placeholder("rightColumn")
+    @Html.Sitecore().DynamicPlaceholder("rightColumn")
 </div>
