@@ -393,6 +393,7 @@
     <Content Include="Views\Renderings\HimalayanHolidays\BikeTestimonial.cshtml" />
     <Content Include="Views\Renderings\HTMLStructures\BootStrapRow.cshtml" />
     <Content Include="Views\Renderings\HTMLStructures\TwoColumn.cshtml" />
+    <Content Include="Views\Renderings\HTMLStructures\ThreeColumn.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
