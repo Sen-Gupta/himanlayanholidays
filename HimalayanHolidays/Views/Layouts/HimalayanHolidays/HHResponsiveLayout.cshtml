@@ -3,7 +3,7 @@
 @using Sitecore.Mvc.Presentation
 @model RenderingModel
 @{
-  Layout = null;
+    Layout = null;
 }
 <!DOCTYPE html>
 <html>
@@ -28,9 +28,8 @@
         <script src="/Contents/Scripts/html5shiv.js"></script>
         <script src="/Contents/Scripts/respond.min.js"></script>
     <![endif]-->
-
-  @*<title>@Html.Sitecore().Field("title", new { DisableWebEdit = true })</title>*@
-  @Html.Sitecore().VisitorIdentification()
+    @*<title>@Html.Sitecore().Field("title", new { DisableWebEdit = true })</title>*@
+    @Html.Sitecore().VisitorIdentification()
 </head>
 <body>
     <header id="header">
@@ -98,78 +97,9 @@
     <section>
         <div class="container">
             <!-- Our Skill -->
-            <div class="skill-wrap clearfix">
-                <div class="center wow fadeInDown">
-                    <h2 class="text-upper">Featured Bikes</h2>
-                    <p class="lead">
-                        The Himalayan Holidays offers Himalayan Motorcycle Adventure Tours that let's you experience the best of Indian Himalayas. <br>
-                        Bike Holidays
-                    </p>
-                    <div class="row clearfix">
-                        <div class="col-md-6 col-sm-6 col-xs-12 cont-col-inner">
-                            <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <h2 class="title-bg">Thunderbird</h2>
-                                <div class="media">
-                                    <div class="pull-center">
-                                        <a href="HolidayDetails.html">
-                                            <img src="images/Royal-Enfiled-green.jpg" class="img-responsive" alt="">
-                                            <span class="cherry-quick-view">Quick view</span>
-                                        </a>
-                                    </div>
-                                    <h5>Royal Enfield - Thunderbird</h5>
-
-                                </div>
-                                <!--/.media -->
-                                <p>
-                                    The all new Royal Enfield Thunderbird now with a powerful 350 cc engine, a 20 litre tank, digital meter console and LED tail lamps gives a new definition to Highway cruising.
-
-                                    Perhaps one of the most anticipated models from the Royal Enfield stable, Thunderbird 350 is poised to enhance the pleasure of leisure motorcycling amongst the touring enthusiasts. Thunderbird 350 with its distinctive "black" styling is all set to make a distinct statement on the roads.
-                                </p>
-                            </div>
-                        </div>
-                        <!--/.col-lg-6 -->
-                        <div class="col-md-6 col-sm-6 col-xs-12 cont-col-inner">
-                            <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <h2 class="title-bg">Bullet Chrome</h2>
-                                <div class="media">
-                                    <div class="pull-center">
-                                        <a href="HolidayDetails.html">
-                                            <img src="images/Royal-Enfiled-silver.jpg" class="img-responsive" alt="">
-                                            <span class="cherry-quick-view ">Quick view</span>
-                                        </a>
-                                    </div>
-                                    <h5>Royal Enfield - Machismo</h5>
-
-                                </div>
-                                <!--/.media -->
-                                <p>Patterned in the excellent line of the Standard Bullet and Thunderbird, Machismo 350 is a well-made motorcycle powered by a refined 346cc lean burn engine of single cylinder, 4 stroke and air-cooled set up. The petrol tank displays a sparkling aspect with the beautiful stroke of chrome paint. The options of windshield and saddlebag add to the aggressive persona and complete look of the bike. </p>
-                            </div>
-                        </div>
-
-                        <!--/.col-lg-6 -->
-                    </div>
-                </div>
-            </div>
+            @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/FeaturedBike.cshtml")
         </div>
     </section>
-                  <!--/nav-->
-              </div>
-          </div>
-      </header>
-      <!--/header-->
-      <section id="landing">
-          <div class="container-fluid">
-              <!-- about us slider -->
-              @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/Carousel.cshtml")
-          </div>
-          <!--/#about-slider-->
-      </section>
-      <section>
-          <div class="container">
-              <!-- Our Skill -->
-              @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/FeaturedBike.cshtml")
-          </div>
-      </section>
 
     <section>
         <div class="container">
@@ -182,28 +112,99 @@
     </section>
     <section>
         <div class="container">
-
             <div class="news-testimonial padding-top0">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12 ">
-                        @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/NewsLetter.cshtml")
-                    </div>
-                    <!--/.col-lg-4 -->
-                    <!--/.col-lg-4 -->
-                    <!--/.row -->
-                    <!--skill_border-->
-                    <div class="col-md-6 col-sm-6 col-xs-12 ">
-                        <div class=" wow fadeInDown" data-wow-duration="1200ms" data-wow-delay="400ms">
-                            @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/Testimonials.cshtml")
+                        <div class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="thumbnail center text-left">
+                                <h2>Newsletter :</h2>
+                                <form action="" id="NewsletterVal">
+                                    <div id="thanksmsg">
+                                        <p>
+                                            Sign up to get exclusive offers from our
+                                            favorite brands and to be well up in the news.
+                                        </p>
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-envelope"></i>
+                                            </span>
+                                            <input class="form-control" type="email" id="myEmail" name="email" placeholder="your@email.com" required>
+                                        </div>
+                                        <input type="submit" value="Subscribe" class="btn btn-large btn-primary" id="newsbtn" disabled />
+
+                                    </div>
+                                </form>
+                                <p id="thanksmsgcont">
+                                    <strong>Thanks! Please check your inbox to confirm your subscription. </strong>
+                                    <br /><br />
+                                    <b>If you haven’t previously confirmed a subscription to a Himalayan Holidays newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.</b>
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <!--/.col-lg-4 -->
+                    <div class="col-md-6 col-sm-6 col-xs-12 ">
+                        <div class=" wow fadeInDown" data-wow-duration="1200ms" data-wow-delay="400ms">
+                            <div class="thumbnail center text-left">
+                                <h2>Testimonials:</h2>
+                                <form action="" method="post" id="testimonialVal">
+                                    <div id="thanksmsgtestimonial">
+                                        <p>We would love to hear from you! Please fill out this form and we will get in touch with you shortly.</p>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                Biker:
+                                            </span>
+                                            <input class="form-control" type="text" id="bikers" name="biker" placeholder="Enter your Name" required>
+                                        </div>
+                                        <br />
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                Email:
+                                            </span>
+                                            <input class="form-control" type="email" id="myEmail2" name="email" placeholder="abc@gmail.com" required>
+                                        </div>
+                                        <br />
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                Tour:
+                                            </span>
+                                            <select class="form-control" id="seloption" name="selectbox" required>
+                                                <option> Select Tour </option>
+                                                <option> Leh - Ladakh Tour </option>
+                                                <option> Sikkim - Gangtok tour </option>
+                                                <option> Darjeeling Tour </option>
+
+                                            </select>
+
+                                        </div>
+                                        <br />
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                Love:
+                                            </span>
+                                            <textarea class="text-cont" name="textareabox" id="messg" placeholder="Please enter your message"></textarea>
+                                        </div>
+                                        <input type="submit" value="Send Love" id="sendlove" class="btn btn-large btn-primary" disabled />
+                                        <input type="submit" value="Edit Love" class="btn btn-large btn-primary" id="editbtn" disabled />
+                                    </div>
+                                </form>
+                                <p id="thanksmsgcontect">
+                                    <strong>
+                                        Thanks for sending us love. Your testimonial will be published shortly.
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--/.col-lg-4 -->
                 </div>
+                <!--/.row -->
+                <!--skill_border-->
                 <div class="row clearfix"> </div>
-                
                 <!--/.row-->
             </div>
-           
-          
             <!--section-->
         </div>
         <!--/.container-->
