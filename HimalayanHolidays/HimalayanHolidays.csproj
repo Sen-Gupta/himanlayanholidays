@@ -391,6 +391,8 @@
     <Content Include="Views\Renderings\HimalayanHolidays\PrimaryMenu.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\RightSideDownNavigationHolidayList.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\BikeTestimonial.cshtml" />
+    <Content Include="Views\Renderings\HTMLStructures\BootStrapRow.cshtml" />
+    <Content Include="Views\Renderings\HTMLStructures\TwoColumn.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

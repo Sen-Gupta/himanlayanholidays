@@ -18,4 +18,7 @@
   <File Include="Views\Renderings\HimalayanHolidays\ContactUsForm.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="">{00000000-0000-0000-0000-000000000000}</Item>
   </File>
+  <File Include="Views\Renderings\HTMLStructures\BootStrapRow.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{ACDEA497-FBC1-4DA4-B3A6-AA17BEADDC0F}</Item>
+  </File>
 </Project>
