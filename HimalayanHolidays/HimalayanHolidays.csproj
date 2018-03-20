@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DynamicPlaceholders, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicPlaceholders.1.2.0.2\lib\net452\DynamicPlaceholders.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicPlaceholders.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicPlaceholders.Mvc.1.2.0.0\lib\net452\DynamicPlaceholders.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
@@ -280,6 +286,7 @@
     <Content Include="Contents\Images\slider.psd" />
     <Content Include="App_Config\ConnectionStrings.config" />
     <Content Include="App_Config\Sitecore.config" />
+    <Content Include="App_Config\Include\DynamicPlaceholders\DynamicPlaceholders.config" />
     <None Include="Properties\PublishProfiles\HH-Local.pubxml" />
     <Content Include="Views\Layouts\HimalayanHolidays\HHResponsiveLayout.cshtml" />
     <Content Include="serialization\master\sitecore\content.item" />
@@ -416,7 +423,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\Include\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
