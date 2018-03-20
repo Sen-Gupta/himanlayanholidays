@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DynamicPlaceholders, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicPlaceholders.1.2.0.2\lib\net452\DynamicPlaceholders.dll</HintPath>
+    </Reference>
     <Reference Include="DynamicPlaceholders.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DynamicPlaceholders.Mvc.1.2.0.0\lib\net452\DynamicPlaceholders.Mvc.dll</HintPath>
     </Reference>
