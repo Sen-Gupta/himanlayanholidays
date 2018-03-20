@@ -396,6 +396,8 @@
     <Content Include="Views\Renderings\HTMLStructures\ThreeColumn.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\RelatedBikes.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\LeftNavigation.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\AboutUs.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\BikesTable.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
