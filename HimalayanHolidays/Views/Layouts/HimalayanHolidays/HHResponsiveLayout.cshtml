@@ -58,26 +58,7 @@
                         @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/Logo.cshtml")
                     </div>
                     <div class="col-md-8 col-sm-10 pull-right">
-                        <nav class="navbar navbar-default navbar-inverse pull-right">
-                            <div class="">
-                                <ul class="nav navbar-nav sf-menu" data-type="navbar">
-                                    <li class="active"><a href="Home.html">Home</a></li>
-                                    <li class="dropdown">
-                                        <a href="Holiday-List.html">Holiday List <i class="fa" aria-hidden="true"></i></a>
-                                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                                            <li><a href="#">Himachal Holidays</a></li>
-                                            <li><a href="#">Kashmir Holidays</a></li>
-                                            <li><a href="#">Explore North-East</a></li>
-                                            <li class="divider"></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="HolidayParallax.html">Holidays</a></li>
-                                    <li><a href="BikeParallax.html">Bikes</a></li>
-                                    <li><a href="About-us.html">About Us</a></li>
-                                    <li><a href="contact-us.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </nav>
+                        @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/PrimaryMenu.cshtml")
 
                     </div>
                 </div>
@@ -97,10 +78,20 @@
     <section>
         <div class="container">
             <!-- Our Skill -->
-            @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/FeaturedBike.cshtml")
+            <div class="skill-wrap clearfix">
+                <div class="container">
+                    <!-- Our Skill -->
+                    @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/FeaturedBike.cshtml")
+                </div>
+            </div>
         </div>
     </section>
-
+    <!--/nav-->
+   
+    
+    
+    <!--/header-->
+   
     <section>
         <div class="container">
             <!--/.our-skill-->
@@ -112,99 +103,28 @@
     </section>
     <section>
         <div class="container">
+
             <div class="news-testimonial padding-top0">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12 ">
-                        <div class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="thumbnail center text-left">
-                                <h2>Newsletter :</h2>
-                                <form action="" id="NewsletterVal">
-                                    <div id="thanksmsg">
-                                        <p>
-                                            Sign up to get exclusive offers from our
-                                            favorite brands and to be well up in the news.
-                                        </p>
-
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                <i class="fa fa-envelope"></i>
-                                            </span>
-                                            <input class="form-control" type="email" id="myEmail" name="email" placeholder="your@email.com" required>
-                                        </div>
-                                        <input type="submit" value="Subscribe" class="btn btn-large btn-primary" id="newsbtn" disabled />
-
-                                    </div>
-                                </form>
-                                <p id="thanksmsgcont">
-                                    <strong>Thanks! Please check your inbox to confirm your subscription. </strong>
-                                    <br /><br />
-                                    <b>If you haven’t previously confirmed a subscription to a Himalayan Holidays newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.</b>
-                                </p>
-                            </div>
-                        </div>
+                        @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/NewsLetter.cshtml")
                     </div>
                     <!--/.col-lg-4 -->
+                    <!--/.col-lg-4 -->
+                    <!--/.row -->
+                    <!--skill_border-->
                     <div class="col-md-6 col-sm-6 col-xs-12 ">
                         <div class=" wow fadeInDown" data-wow-duration="1200ms" data-wow-delay="400ms">
-                            <div class="thumbnail center text-left">
-                                <h2>Testimonials:</h2>
-                                <form action="" method="post" id="testimonialVal">
-                                    <div id="thanksmsgtestimonial">
-                                        <p>We would love to hear from you! Please fill out this form and we will get in touch with you shortly.</p>
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                Biker:
-                                            </span>
-                                            <input class="form-control" type="text" id="bikers" name="biker" placeholder="Enter your Name" required>
-                                        </div>
-                                        <br />
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                Email:
-                                            </span>
-                                            <input class="form-control" type="email" id="myEmail2" name="email" placeholder="abc@gmail.com" required>
-                                        </div>
-                                        <br />
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                Tour:
-                                            </span>
-                                            <select class="form-control" id="seloption" name="selectbox" required>
-                                                <option> Select Tour </option>
-                                                <option> Leh - Ladakh Tour </option>
-                                                <option> Sikkim - Gangtok tour </option>
-                                                <option> Darjeeling Tour </option>
-
-                                            </select>
-
-                                        </div>
-                                        <br />
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                Love:
-                                            </span>
-                                            <textarea class="text-cont" name="textareabox" id="messg" placeholder="Please enter your message"></textarea>
-                                        </div>
-                                        <input type="submit" value="Send Love" id="sendlove" class="btn btn-large btn-primary" disabled />
-                                        <input type="submit" value="Edit Love" class="btn btn-large btn-primary" id="editbtn" disabled />
-                                    </div>
-                                </form>
-                                <p id="thanksmsgcontect">
-                                    <strong>
-                                        Thanks for sending us love. Your testimonial will be published shortly.
-                                    </strong>
-                                </p>
-                            </div>
+                            @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/Testimonials.cshtml")
                         </div>
                     </div>
-
-                    <!--/.col-lg-4 -->
                 </div>
-                <!--/.row -->
-                <!--skill_border-->
                 <div class="row clearfix"> </div>
+
                 <!--/.row-->
             </div>
+
+
             <!--section-->
         </div>
         <!--/.container-->
@@ -213,21 +133,11 @@
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-sm-3 col-xs-12"> &copy; 2017 <a target="_blank" href="Home.html" title="Himalayan Holidays">Himalayan Holidays</a>. All Rights Reserved. </div>
+                <div class="col-md-5 col-sm-3 col-xs-12">
+                    @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/Copyright.cshtml")
+                </div>
                 <div class="col-md-5 col-sm-7 col-xs-12">
-                    <div class="footer-link">
-                        <ul class="footer-link-left">
-                            <li class="active"><a href="Home.html">Home</a></li>
-                            <li><a href="Holiday-List.html">Holiday List</a></li>
-                            <li><a href="HolidayParallax.html">Holidays</a></li>
-                            <li><a href="BikeParallax.html">Bikes</a></li>
-                            <li><a href="About-us.html">About Us</a></li>
-                            <li><a href="contact-us.html">Contact</a></li>
-                        </ul>
-
-
-                    </div>
-
+                    @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/FooterMenu.cshtml")
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-12">
                     <a class="navbar-brand" href="Home.html"><img src="images/HH/hhlogo.PNG" alt="logo" class="img-responsive"></a>

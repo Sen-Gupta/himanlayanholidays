@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <Site Server="himalayanholidays" UserName="sitecore\admin" IsRemoteSitecore="False" />
+    <Site Server="himalayanHolidays" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
   <File Include="Views\Layouts\HimalayanHolidays\HHResponsiveLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
   <File Include="/Views/Layouts/HimalayanHolidays/HHResponsiveLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
@@ -8,5 +8,14 @@
   </File>
   <File Include="Views\Renderings\HimalayanHolidays\NewsLetter.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{521498C7-61E7-4712-AF9E-1A0443577A31}</Item>
+  </File>
+  <File Include="Views\Renderings\HimalayanHolidays\BikeDetails.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{6CCACEAA-DABB-44D4-9BD5-6566208F5C74}</Item>
+  </File>
+  <File Include="Views\Renderings\HimalayanHolidays\Map.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{AA6569C4-8FC6-4517-9B5E-C0CFAEEE591D}</Item>
+  </File>
+  <File Include="Views\Renderings\HimalayanHolidays\ContactUsForm.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="">{00000000-0000-0000-0000-000000000000}</Item>
   </File>
 </Project>
