@@ -399,6 +399,7 @@
     <Content Include="Views\Renderings\HimalayanHolidays\BikesTable.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\SubTitleText.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\ContactUsForm.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\PageHeading.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
