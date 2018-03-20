@@ -18,4 +18,7 @@
   <File Include="Views\Renderings\HTMLStructures\BootStrapRow.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{ACDEA497-FBC1-4DA4-B3A6-AA17BEADDC0F}</Item>
   </File>
+  <File Include="Views\Renderings\HimalayanHolidays\LeftNavigation.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{D86141F8-4D96-4073-96E4-EBAC1C8798E3}</Item>
+  </File>
 </Project>
