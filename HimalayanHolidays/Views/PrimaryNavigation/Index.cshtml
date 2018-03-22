@@ -1,0 +1,18 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Data.Items
+@model List<Item>
+@{
+
+}
+@if(Model != null)
+{
+    foreach (Item item in Model)
+    {
+        @item.Name <br />
+    }
+}
+else
+{
+    <p>Empty Model was passed</p>
+}
