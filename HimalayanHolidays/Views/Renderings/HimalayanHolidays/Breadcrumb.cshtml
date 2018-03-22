@@ -1,10 +1,29 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
+@using Sitecore.Data.Items
+@using Sitecore.Links
 @model RenderingModel
 @{
+    string site = Sitecore.Context.Site.StartItem;
+    site = site.Substring(1, site.Length - 1);
 
+    Item currentitem = Html.Sitecore().CurrentItem;
+    List<Item> breadcrumb = new List<Item>();
+
+    while(currentitem != null)
+    {
+        breadcrumb.Add(currentitem);
+        if(currentitem.Name.ToLower() == site.ToLower())
+        {
+            break;
+        }
+        currentitem = currentitem.Parent;
+    }
+    breadcrumb.Reverse();
 }
 <ol class="breadcrumb bread-primary ">
-    <li><a href="Home.html">Home</a></li>
-    <li class="active">Holiday List</li>
+    @foreach (var item in breadcrumb)
+    {
+        <li><a href="@LinkManager.GetItemUrl(item).">@item.Name</a></li>
+    }
 </ol>
