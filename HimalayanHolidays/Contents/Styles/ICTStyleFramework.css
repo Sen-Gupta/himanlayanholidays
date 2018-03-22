@@ -1,0 +1,14 @@
+﻿/**This file contains all the CSS parameter to be passed to control rendering styles*/
+.ict-hide
+{
+    display: none !important;
+}
+
+.ict-red {
+    background-color:red !important;
+    color:white !important;
+}
+.ict-blue {
+    background-color:blue !important;
+    color:white !important;
+}

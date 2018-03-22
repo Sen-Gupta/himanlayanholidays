@@ -1,0 +1,61 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Data
+@using Sitecore.Data.Items
+@using Sitecore.Links
+@using Sitecore.Data.Fields
+@using Sitecore.Extension.Data.Fields
+@using Sitecore.Links
+
+@model RenderingModel
+@{
+    string theMenuListDataSource = string.Empty;
+    Item theMeunListDataItem = null;
+    bool isDataSource = false;
+    theMenuListDataSource = Html.Sitecore().CurrentRendering.DataSource;
+    if (!String.IsNullOrEmpty(theMenuListDataSource))
+    {
+
+        isDataSource = true;
+        theMeunListDataItem = Sitecore.Context.Database.GetItem(theMenuListDataSource);
+
+    }
+    else
+    {
+        isDataSource = false;
+    }
+
+}
+@if (isDataSource)
+{
+    <div class="navbar-collapse collapse sidebar-navbar-collapse left-navbar">
+        <ul class="nav nav-pills nav-stacked">
+            @for (int i = 0; i < theMeunListDataItem.Children.Count; i++)
+            {
+                Item theMenuItem = theMeunListDataItem.Children[i];
+                bool include = (theMenuItem["Include In Navigation"] == "1");
+                if (include)
+                {
+                    if (i == 0)
+                    {
+                        <li class="active"><a href="@LinkManager.GetItemUrl(theMeunListDataItem.Children[i])"><i class="fa fa-chevron-right" aria-hidden="true"></i>@theMeunListDataItem.Children[i].Name</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="@LinkManager.GetItemUrl(theMeunListDataItem.Children[i])"><i class="fa fa-chevron-right" aria-hidden="true"></i>@theMeunListDataItem.Children[i].Name</a></li>
+                    }
+                }
+
+            }
+
+        </ul>
+    </div>
+
+}
+else
+{
+    //Todo do a meaningful message later
+    <p>@Html.Sitecore().CurrentRendering.RenderingItem.DisplayName has no data source.</p>
+}
+
+
