@@ -407,6 +407,7 @@
     <Content Include="Views\Renderings\HimalayanHolidays\ContactUsForm.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\PageHeading.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\SecondaryNavigation.cshtml" />
+    <Content Include="Views\PrimaryNavigation\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -420,12 +421,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Controllers\PrimaryNavigationController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\Include\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sitecore.Extension\Sitecore.Extension.csproj">
