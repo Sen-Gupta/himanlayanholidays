@@ -432,10 +432,6 @@
       <Project>{0f512f1b-2555-459c-80d0-09df4e1d50d7}</Project>
       <Name>Sitecore.Extension</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Sitecore.ICT.Framework\Sitecore.ICT.Framework.csproj">
-      <Project>{8142311e-ca14-49f1-a86c-932063fbadcf}</Project>
-      <Name>Sitecore.ICT.Framework</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
