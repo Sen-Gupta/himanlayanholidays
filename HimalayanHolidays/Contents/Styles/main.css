@@ -162,7 +162,6 @@ body > section {
     text-align: center;
     padding-bottom: 20px;
 }
-
 .scaleIn {
     -webkit-animation-name: scaleIn;
     animation-name: scaleIn;
@@ -3751,4 +3750,7 @@ input[type="text"].error {
 }
 .padding-bot{
 	padding-bottom:55px;
+}
+.icthide {
+    display:none !important;
 }

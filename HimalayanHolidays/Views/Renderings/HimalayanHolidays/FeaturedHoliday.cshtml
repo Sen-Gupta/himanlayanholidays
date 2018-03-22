@@ -1,25 +1,57 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
+@using Sitecore.Data.Items
+@using Sitecore.Data.Fields
+@using Sitecore.ICT.Framework.Renderings
+@using Sitecore.Extension.Mvc.Presentation
 @model RenderingModel
 @{
+    string FeaturedHoliday = string.Empty;
+    Item theHolidayItem = null;
+    bool isDataSource = false;
+    Item theSelectedHoliday = null;
+    string theHolidayDataSource = Html.Sitecore().CurrentRendering.DataSource;
+    if (!String.IsNullOrEmpty(theHolidayDataSource))
+    {
+
+        isDataSource = true;
+        theHolidayItem = Sitecore.Context.Database.GetItem(theHolidayDataSource);
+        theSelectedHoliday = ((ReferenceField)theHolidayItem.Fields["Featured Holiday"]).TargetItem;
+
+        
+
+    }
+    else
+    {
+        isDataSource = false;
+    }
 
 }
-<div class="inner-class-width">
-    <h2>Featured Holidays</h2>
-    <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <div class="media">
-            <div class="pull-left">
-                <a href="#"><img class="media-object img-responsive" src="images/f1.jpg" alt=""></a>
-            </div>
+@if (isDataSource)
+{
+    <div class="inner-class-width @Html.Sitecore().CurrentRendering.BackgroundColor()">
+        <h2>@Html.Sitecore().Field("Title", theHolidayItem)</h2>
+        <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="media">
+                <div class="pull-left @Html.Sitecore().CurrentRendering.HideImage()">
+                  
+                    <a href="#">@Html.Sitecore().Field("Image", theSelectedHoliday, new {@class="img-responsive, left" })</a>
+                </div>
 
+            </div>
+            <div class="media-body detail-head">
+                <h4>@Html.Sitecore().Field("Title", theSelectedHoliday)</h4>
+                <h5><b>@Html.Sitecore().Field("Summary Title",theSelectedHoliday)</b></h5>
+            </div>
+            <!--/.media -->
+            <p>
+               @Html.Sitecore().Field("Summary",theSelectedHoliday)
+                </p>
         </div>
-        <div class="media-body detail-head">
-            <h4>Leh - Ladakh Tour</h4>
-            <h5><b>Must do:- Life Time Experience</b></h5>
-        </div>
-        <!--/.media -->
-        <p>
-            “We live in a wonderful world that is full of beauty, charm and adventure. There is no end to the adventures we can have if only we seek them with our eyes open.”
-        </p><p>The package of Himalayan Holidays is great and they didn't hid anything - Satish </p>
     </div>
-</div>
+}
+else
+{
+    //Todo do a meaningful message later
+    <p>@Html.Sitecore().CurrentRendering.RenderingItem.DisplayName has no data source.</p>
+}

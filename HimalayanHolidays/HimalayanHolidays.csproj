@@ -99,7 +99,7 @@
       <HintPath>..\packages\Sitecore.Analytics.Processing.8.2.170614\lib\NET452\Sitecore.Analytics.Processing.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Kernel.8.2.170614\lib\NET452\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Kernel.NoReferences.8.2.170614\lib\NET452\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Logging, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Logging.8.2.170614\lib\NET452\Sitecore.Logging.dll</HintPath>
@@ -259,6 +259,7 @@
     <Content Include="Contents\Styles\bootstrap.min.css" />
     <Content Include="Contents\Styles\font-awesome.css" />
     <Content Include="Contents\Styles\font-awesome.min.css" />
+    <Content Include="Contents\Styles\ICTStyleFramework.css" />
     <Content Include="Contents\Styles\main.css" />
     <Content Include="Contents\Styles\mobilemenu.css" />
     <Content Include="Contents\Styles\prettyPhoto.css" />
@@ -400,12 +401,12 @@
     <Content Include="Views\Renderings\HTMLStructures\TwoColumn.cshtml" />
     <Content Include="Views\Renderings\HTMLStructures\ThreeColumn.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\RelatedBikes.cshtml" />
-    <Content Include="Views\Renderings\HimalayanHolidays\LeftNavigation.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\AboutUs.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\BikesTable.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\SubTitleText.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\ContactUsForm.cshtml" />
     <Content Include="Views\Renderings\HimalayanHolidays\PageHeading.cshtml" />
+    <Content Include="Views\Renderings\HimalayanHolidays\SecondaryNavigation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -430,6 +431,10 @@
     <ProjectReference Include="..\Sitecore.Extension\Sitecore.Extension.csproj">
       <Project>{0f512f1b-2555-459c-80d0-09df4e1d50d7}</Project>
       <Name>Sitecore.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.ICT.Framework\Sitecore.ICT.Framework.csproj">
+      <Project>{8142311e-ca14-49f1-a86c-932063fbadcf}</Project>
+      <Name>Sitecore.ICT.Framework</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

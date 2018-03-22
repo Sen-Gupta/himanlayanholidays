@@ -25,6 +25,7 @@
     <link href="/Contents/Styles/responsive.css" rel="stylesheet">
     <link href="/Contents/Styles/mobilemenu.css" rel="stylesheet" />
     <link href="/Contents/Styles/search.css" rel="stylesheet" />
+    <link href="~/Contents/Styles/ICTStyleFramework.css" rel="stylesheet" />
 
     <!--[if lt IE 9]>
         <script src="/Contents/Scripts/html5shiv.js"></script>
@@ -57,7 +58,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-2 pull-left">
-                        @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/Logo.cshtml")
+                        @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/Logo.cshtml", new {@DataSource = "{2FEF488E-3B80-4473-8107-D98A8B8B0B2C}" })
                     </div>
                     <div class="col-md-8 col-sm-10 pull-right">
                         @Html.Sitecore().ViewRendering("~/Views/Renderings/HimalayanHolidays/PrimaryMenu.cshtml")
