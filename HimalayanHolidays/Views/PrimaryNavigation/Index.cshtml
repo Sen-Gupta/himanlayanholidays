@@ -1,16 +1,21 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
+@using Sitecore.Links
 @using Sitecore.Data.Items
 @model List<Item>
 @{
 
 }
-@if(Model != null)
+@if (Model != null)
 {
-    foreach (Item item in Model)
+<ol class="breadcrumb bread-primary ">
+    @foreach (Item item in Model)
     {
-        @item.Name <br />
+    <li><a href="@LinkManager.GetItemUrl(item).">@item.Name</a></li>
     }
+</ol>
+
+
 }
 else
 {
